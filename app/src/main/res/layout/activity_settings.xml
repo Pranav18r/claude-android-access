@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_bg"
+    android:padding="24dp">
+
+    <!-- Top bar -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_back"
+        app:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+    <!-- Language section -->
+    <TextView
+        android:id="@+id/tvLanguageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/language"
+        android:textColor="@color/accent_green"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <RadioGroup
+        android:id="@+id/rgLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_denomination"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLanguageLabel">
+
+        <RadioButton
+            android:id="@+id/rbEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/english"
+            android:textColor="@color/white"
+            android:buttonTint="@color/accent_green"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbHindi"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/hindi"
+            android:textColor="@color/white"
+            android:buttonTint="@color/accent_green"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbMalayalam"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/malayalam"
+            android:textColor="@color/white"
+            android:buttonTint="@color/accent_green"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <!-- Speech rate section -->
+    <TextView
+        android:id="@+id/tvSpeechRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/speech_rate"
+        android:textColor="@color/accent_green"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgLanguage" />
+
+    <Spinner
+        android:id="@+id/spinnerSpeechRate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_denomination"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSpeechRateLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

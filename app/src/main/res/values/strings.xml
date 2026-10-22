@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currency Reader</string>
+    <string name="tagline">Empowering the Visually Impaired</string>
+    <string name="select_language">Select Your Language</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी (Hindi)</string>
+    <string name="malayalam">മലയാളം (Malayalam)</string>
+    <string name="settings">Settings</string>
+    <string name="back">Back</string>
+    <string name="language">Language</string>
+    <string name="speech_rate">Speech Rate</string>
+    <string name="no_money_detected_en">No money detected</string>
+    <string name="no_money_detected_hi">कोई पैसा नहीं मिला</string>
+    <string name="no_money_detected_ml">നോട്ടുകൾ ഒന്നും കണ്ടില്ല</string>
+    <string name="welcome">Welcome to Currency Reader</string>
+    <string name="start_detection">Tap a language to start</string>
+</resources>
